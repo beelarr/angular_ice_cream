@@ -1,0 +1,16 @@
+<article class="product-list">
+    <header>
+        <h1>List of Flavors</h1>
+    </header>
+    <section>
+        <div ng-repeat="flavor in flavors">
+            <a href="#/item/{{flavor.id}}">{{flavor.title}}</a>
+        </div>
+        <h2>The Milk Kind</h2>
+        <div ng-repeat="flavor in flavors">
+            <div ng-show="{{flavor.milk}}">
+                <a href="#/item/{{flavor.id}}">{{flavor.title}}</a>
+            </div>
+        </div>
+    </section>
+</article>

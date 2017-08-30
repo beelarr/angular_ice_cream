@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular Ice Cream Shop</title>
+</head>
+<body ng-app="IceCreamApp">
+
+    <h1>Ice Cream, Ice Cream, We All Scream for Ice Cream</h1>
+    <div ng-include="'partials/navbar.html'"></div>
+    <div ng-include="'partials/greetings.html'"></div>
+    <div ng-view></div>
+</body>
+<script src="lib/node_modules/angular/angular.min.js"></script>
+<script src="lib/node_modules/angular-route/angular-route.js"></script>
+<script src="app/app.js"></script>
+<script src="app/factories/FlavorFactory.js"></script>
+<script src="app/Controllers/FlavorCtrl.js"></script>
+
+</html>

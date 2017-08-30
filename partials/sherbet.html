@@ -1,0 +1,12 @@
+<header>
+    <h1>List of Sherbet Flavors</h1>
+</header>
+<section>
+    <h2>The Sherbet Kind</h2>
+    <div ng-repeat="flavor in flavors">
+        <div ng-show="{{!flavor.milk}}">
+            <a href="#/item/{{flavor.id}}">{{flavor.title}}</a>
+        </div>
+    </div>
+</section>
+</article>
